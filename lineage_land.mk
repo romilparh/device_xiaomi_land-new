@@ -47,4 +47,5 @@ PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
     ro.product.model
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.lazy.developer=Romil Parhwal
+    ro.lazy.developer=RomilParhwal \
+    ro.build.display.id=LazyV1
