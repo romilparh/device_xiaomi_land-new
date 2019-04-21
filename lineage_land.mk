@@ -27,6 +27,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from land device
 $(call inherit-product, $(DEVICE_PATH)/device.mk)
 
+TARGET_GAPPS_ARCH := arm64
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := land
 PRODUCT_MANUFACTURER := Xiaomi
@@ -44,3 +45,6 @@ BUILD_FINGERPRINT := "Xiaomi/land/land:6.0.1/MMB29M/V9.6.1.0.MALMIFD:user/releas
 
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
     ro.product.model
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.lazy.developer=Romil Parhwal
